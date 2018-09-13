@@ -36,7 +36,7 @@ plt.show()
 '''
 # 箱图
 import numpy as np
-import pandas as pd
+import 数据探索 as pd
 x=np.random.randn(1000)
 d=pd.DataFrame([x,x+1])
 print(d)
@@ -46,7 +46,7 @@ plt.show()
 '''
 # 对数图像
 import numpy as np
-import pandas as pd
+import 数据探索 as pd
 plt.rcParams['font.sans-serif']
 plt.rcParams['axes.unicode_minus']=False
 x=pd.Series(np.exp(np.arange(20)))

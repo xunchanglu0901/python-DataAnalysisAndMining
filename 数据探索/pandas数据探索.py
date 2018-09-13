@@ -6,7 +6,7 @@
 
 #基本信息 相关系数
 '''
-import pandas as pd
+import 数据探索 as pd
 D=pd.DataFrame([range(1,8),range(2,9)])
 D.corr(method='kendall')
 s1=D.loc[1]
@@ -14,7 +14,7 @@ s2=D.loc[0]
 s1.corr(s2)
 print(s1.corr(s2)'''
 '''
-import pandas as pd
+import 数据探索 as pd
 import numpy as np
 
 d=pd.DataFrame(np.random.randn(6,5))
