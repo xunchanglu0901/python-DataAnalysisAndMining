@@ -36,7 +36,7 @@ plt.show()
 '''
 # 箱图
 import numpy as np
-import 数据探索 as pd
+import pandas as pd
 x=np.random.randn(1000)
 d=pd.DataFrame([x,x+1])
 print(d)
