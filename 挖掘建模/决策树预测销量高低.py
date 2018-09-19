@@ -19,7 +19,8 @@ dtc= DTC(criterion='entropy')
 dtc.fit(x,y)
 
 #可视化
-from sklearn.tree import export_graphviz
-from sklearn.externals.six import StringIO
-with open("Dtree.dot","w") as f:
-    f = export_graphviz(dtc, out_file=f)
+#from sklearn.tree import export_graphviz
+#from sklearn.externals.six import StringIO
+#with open("Dtree.dot","w") as f:
+#    f = export_graphviz(dtc, out_file=f)
+print(dtc.predict(x))
