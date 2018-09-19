@@ -14,7 +14,7 @@ plt.rcParams['axes.unicode_minus']=False
 
 plt.figure() #画图
 p=data.boxplot(return_type='dict')#画箱线图，直接使用DataFrame的方法
-x=p['fliers'][0].get_xdata()
+x=p['fliers'][0].get_xdata()# 第一个异常点的数值
 y=p['fliers'][0].get_ydata()# 'flies'即为异常值的标签
 y.sort()#排序
 
