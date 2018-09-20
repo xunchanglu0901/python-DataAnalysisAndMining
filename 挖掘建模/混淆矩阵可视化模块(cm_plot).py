@@ -1,6 +1,7 @@
 #-*- coding: utf-8 -*-
 # 神经网络画图：矩阵
 # 原名 ：cm_plot
+# 作者    : xcl
 def cm_plot(y, yp):
   from sklearn.metrics import confusion_matrix  # 导入混淆矩阵函数
 
