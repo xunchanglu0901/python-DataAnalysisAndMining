@@ -21,13 +21,15 @@ data = pd.read_excel(discfile, index_col = u'日期')
 import matplotlib.pyplot as plt
 plt.rcParams['font.sans-serif'] = ['SimHei'] #用来正常显示中文标签
 plt.rcParams['axes.unicode_minus'] = False #用来正常显示负号
-data.plot()
+#data.plot()
 #plt.show()
 
 #自相关图
 from statsmodels.graphics.tsaplots import plot_acf
-#plot_acf(data).show()
+plot_acf(data,alpha=0.51).show()
+plt.show()
 
+'''
 #偏自相关图
 #from statsmodels.graphics.tsaplots import plot_pacf
 #plot_pacf(data).show()
@@ -83,4 +85,4 @@ model = ARIMA(data, (p,1,q)).fit() #建立ARIMA(0, 1, 1)模型
 #print(model.summary2()) #给出一份模型报告
 
 print(model.forecast(forecastnum)) #作为期5天的预测，返回预测结果、标准误差、置信区间。
-
+'''
